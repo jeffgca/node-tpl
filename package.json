@@ -1,17 +1,17 @@
 {
-  "name": "node",
-  "version": "0.0.1",
-  "description": "Template node module.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon index.js"
-  },
-  "keywords": [],
-  "author": "Jeff Griffiths (  https://github.com/jeffgdotca )",
-  "license": "ISC",
-  "type": "module",
-  "devDependencies": {
-    "nodemon": "^3.1.9"
-  }
+	"name": "node",
+	"version": "0.0.1",
+	"description": "Template node module.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"watch": "nodemon index.js"
+	},
+	"keywords": [],
+	"author": "Jeff Griffiths (  https://github.com/jeffgca )",
+	"license": "ISC",
+	"type": "module",
+	"devDependencies": {
+		"nodemon": "^3.1.9"
+	}
 }
