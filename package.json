@@ -4,14 +4,15 @@
 	"description": "Template node module.",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"watch": "nodemon index.js"
+		"test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+		"watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch"
 	},
 	"keywords": [],
 	"author": "Jeff Griffiths (  https://github.com/jeffgca )",
 	"license": "ISC",
 	"type": "module",
 	"devDependencies": {
+		"jest": "^29.7.0",
 		"nodemon": "^3.1.9"
 	},
 	"dependencies": {
