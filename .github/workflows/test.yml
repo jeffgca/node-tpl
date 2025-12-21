@@ -12,23 +12,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 10
+          run_install: false
+
+      - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: 22
           cache: 'pnpm'
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10 # Or a specific version number
-          run_install: true # Optional: runs pnpm install automatically
-
-
-      - name: Enable Corepack and pnpm
-        run: |
-          corepack enable
-          pnpm -v
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
